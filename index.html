@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    href="https://fonts.googleapis.com/css2?family=Muli:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+    <title>Foro</title>
+</head>
+<body>
+    <form class="form-container">
+        <fieldset>
+            <legend>Create a new Topic</legend>
+            <p class="form-input-container">
+                <label for="postTitle"></label>
+                <input type="text" id="postTitle" name="postTitle" placeholder="Type title, or paste a link here">
+            </p>
+            <p class="form-input-container">
+                <label for="postCategory"></label>
+                <select id="postCategory" name="category">
+                    <option value="none">Category</option>
+                    <option value="taste">Taste</option>
+                    <option value="discussion">Discussion</option>
+                    <option value="recommendations">Recommendations</option>
+                </select>
+            </p>
+            <p class="form-input-container">
+                <label for="postTags"></label>
+                <select id="postTags" name="tags" >
+                    <option value="none">Tags</option>
+                    <option value="videos">Videos</option>
+                    <option value="images">Images</option>
+                    <option value="music">Music</option>
+                    <option value="art">Art</option>
+                    <option value="education">Education</option>
+                </select>
+            </p>
+            <textarea name="postDescription" placeholder="Enter your description here" rows="4"></textarea>
+            <button type="submit"><span>+ </span> Create Topic</button>
+            <button type="reset">Cancel</button>
+        </fieldset>
+    </form>
+    
+</body>
+</html>
